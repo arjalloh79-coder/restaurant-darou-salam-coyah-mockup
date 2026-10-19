@@ -1,64 +1,23 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Restaurant Darou Salam — Maneyah, Coyah</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Darou Salam | Coyah – Mockup Al-Falah</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script>tailwind.config={theme:{extend:{colors:{navy:'#0f172a',teal:'#0d9488',cream:'#f8fafc',gold:'#c9a227'}}}}</script>
-  <style>body{font-family:Inter,system-ui,sans-serif}[data-lang="en"] .t-fr,[data-lang="fr"] .t-en{display:none}</style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script>tailwind.config = { theme: { extend: { colors: { navy: '#0f172a', teal: '#0d9488', cream: '#f8fafc' } } } }</script>
+  <style>.lang-en { display: none; } .en .lang-fr { display: none; } .en .lang-en { display: block; } .hero-overlay { background: linear-gradient(to bottom, rgba(15,23,42,0.55), rgba(15,23,42,0.75)); }</style>
 </head>
-<body class="bg-cream text-navy" data-lang="fr">
-  <div class="bg-amber-50 border-b border-amber-200 text-center text-xs sm:text-sm py-2 px-4 text-amber-900">Maquette offerte par Al-Falah Marketing — rien n’est en ligne sous votre nom.</div>
-  <header class="sticky top-0 z-40 bg-navy/95 backdrop-blur text-white">
-    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-      <div class="font-extrabold tracking-tight">DAROU SALAM</div>
-      <nav class="hidden md:flex gap-6 text-sm text-slate-200"><a href="#menu">Menu</a><a href="#galerie">Galerie</a><a href="#contact">Contact</a></nav>
-      <div class="flex items-center gap-2">
-        <button onclick="toggleLang()" class="text-xs border border-white/30 rounded-full px-3 py-1">EN / FR</button>
-        <a href="https://wa.me/224626299193" class="bg-teal text-white text-sm font-semibold rounded-full px-4 py-2">WhatsApp</a>
-      </div>
-    </div>
-  </header>
-  <section class="relative min-h-[78vh] flex items-end">
-    <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=1600&q=80" alt="" class="absolute inset-0 w-full h-full object-cover">
-    <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/60 to-navy/20"></div>
-    <div class="relative max-w-6xl mx-auto px-4 pb-16 pt-32 text-white">
-      <p class="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Maneyah · près Station Shell · Coyah</p>
-      <h1 class="t-fr text-4xl sm:text-6xl font-extrabold leading-tight max-w-2xl">Cuisine généreuse, tous les jours, jusqu’à minuit.</h1>
-      <h1 class="t-en text-4xl sm:text-6xl font-extrabold leading-tight max-w-2xl">Generous plates, every day, until midnight.</h1>
-      <p class="t-fr mt-4 max-w-xl text-slate-200">Restaurant Darou Salam à Maneyah, Coyah — plats du jour, grillades et repas de famille.</p>
-      <p class="t-en mt-4 max-w-xl text-slate-200">Darou Salam in Maneyah, Coyah — daily plates, grills, and family meals.</p>
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a href="https://wa.me/224626299193" class="bg-teal text-white font-semibold rounded-full px-6 py-3">WhatsApp 626 29 91 93</a>
-        <a href="tel:+224626299193" class="bg-white/10 border border-white/30 rounded-full px-6 py-3">Appeler</a>
-      </div>
-    </div>
-  </section>
-  <section class="bg-navy text-white py-4"><div class="max-w-6xl mx-auto px-4 grid sm:grid-cols-3 gap-3 text-sm"><div>Laurel, MD · +1 240 280 6137</div><div>Coyah · Orange Money / GNF · +224 611 351 302</div><div>Freetown · SLE</div></div></section>
-  <section id="menu" class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="t-fr text-3xl font-extrabold mb-2">Au menu</h2>
-    <h2 class="t-en text-3xl font-extrabold mb-2">On the menu</h2>
-    <p class="text-slate-600 mb-8">Prix du jour sur WhatsApp — photos placeholders Unsplash.</p>
-    <div class="grid sm:grid-cols-3 gap-6">
-      <article class="bg-white rounded-2xl overflow-hidden shadow-sm"><img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=800" class="h-44 w-full object-cover" alt=""><div class="p-4"><h3 class="font-bold">Riz sauce</h3></div></article>
-      <article class="bg-white rounded-2xl overflow-hidden shadow-sm"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800" class="h-44 w-full object-cover" alt=""><div class="p-4"><h3 class="font-bold">Grillades</h3></div></article>
-      <article class="bg-white rounded-2xl overflow-hidden shadow-sm"><img src="https://images.unsplash.com/photo-1544025162-d76690232f4e?w=800" class="h-44 w-full object-cover" alt=""><div class="p-4"><h3 class="font-bold">Repas de famille</h3></div></article>
-    </div>
-  </section>
-  <section id="galerie" class="bg-white py-16"><div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-3">
-    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700" class="h-40 w-full object-cover rounded-xl" alt="">
-    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700" class="h-40 w-full object-cover rounded-xl" alt="">
-    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700" class="h-40 w-full object-cover rounded-xl" alt="">
-    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=700" class="h-40 w-full object-cover rounded-xl" alt="">
-  </div></section>
-  <section class="max-w-6xl mx-auto px-4 py-16"><h2 class="text-3xl font-extrabold mb-4">Résultats Al-Falah</h2><p class="text-slate-600 max-w-2xl">Acile Coffee et Shawarma Sam montrent qu’une page claire + WhatsApp suffit. Cette maquette montre ce que Darou Salam pourrait avoir.</p></section>
-  <section id="contact" class="bg-navy text-white py-16"><div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
-    <div><h2 class="text-3xl font-extrabold mb-4">Contact</h2><p>Près de la station Shell, Maneyah, Coyah, Guinée</p><p class="mt-2">Tél. <a class="text-teal" href="tel:+224626299193">+224 626 29 91 93</a> · <a class="text-teal" href="tel:+224661695858">+224 661 69 58 58</a></p><p class="mt-1 text-slate-300 text-sm">09h00 — 00h00, 7j/7 (GoAfricaOnline)</p><a href="https://wa.me/224626299193" class="inline-block mt-6 bg-teal rounded-full px-6 py-3 font-semibold">WhatsApp</a></div>
-    <form onsubmit="event.preventDefault(); window.open('https://wa.me/224626299193?text='+encodeURIComponent('Bonjour, je suis '+this.name.value+'. '+this.msg.value));"><input name="name" required placeholder="Nom" class="w-full mb-3 rounded-xl px-4 py-3 text-navy"><textarea name="msg" required rows="4" placeholder="Message" class="w-full mb-3 rounded-xl px-4 py-3 text-navy"></textarea><button class="bg-gold text-navy font-bold rounded-full px-6 py-3">Envoyer via WhatsApp</button></form>
-  </div></section>
-  <footer class="bg-slate-950 text-slate-400 text-sm py-10"><div class="max-w-6xl mx-auto px-4"><p class="text-white font-semibold">Restaurant Darou Salam · Coyah</p><p>Maquette <a class="text-teal" href="https://al-falahmarketing.com">Al-Falah Marketing</a> · 8468 Winding Trail, Laurel, MD 20724 · info@al-falahmarketing.com · +1 240 280 6137 · +224 611 351 302</p></div></footer>
-  <div class="fixed bottom-0 inset-x-0 md:hidden bg-navy text-white grid grid-cols-3 text-center text-xs py-3 z-50"><a href="tel:+224626299193">Appeler</a><a href="https://wa.me/224626299193">WhatsApp</a><a href="#menu">Menu</a></div>
-  <script>function toggleLang(){const b=document.body;b.dataset.lang=b.dataset.lang==='fr'?'en':'fr';}</script>
-</body></html>
+<body class="bg-cream text-navy">
+  <div class="bg-amber-50 border-b border-amber-200 text-center py-2 text-sm text-amber-900"><span class="lang-fr">Maquette gratuite par Al-Falah Marketing — rien n’est en ligne sous votre nom.</span><span class="lang-en">Complimentary mockup by Al-Falah Marketing — nothing is live under your name.</span></div>
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-sm"><div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between"><div class="font-bold text-xl">Darou <span class="text-teal">Salam</span></div><button onclick="document.documentElement.classList.toggle('en')" class="text-xs border px-2 py-1 rounded">EN / FR</button><a href="https://wa.me/224626299193" class="bg-teal text-white px-4 py-2 rounded-xl text-sm">WhatsApp</a></div></header>
+  <section class="relative h-[70vh] min-h-[420px] flex items-center"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80" class="absolute inset-0 w-full h-full object-cover"><div class="absolute inset-0 hero-overlay"></div><div class="relative max-w-6xl mx-auto px-4 text-white text-center md:text-left"><h1 class="text-4xl md:text-6xl font-bold mb-4">Restaurant Darou Salam</h1><p class="text-lg mb-6 max-w-xl">Près de la station Shell, Maneyah, Coyah. Cuisine africaine et grillades.</p><div class="flex gap-3 justify-center md:justify-start"><a href="https://wa.me/224626299193" class="bg-teal px-6 py-3 rounded-xl font-semibold">WhatsApp</a><a href="tel:+224626299193" class="border border-white px-6 py-3 rounded-xl font-semibold">Appeler</a></div></div></section>
+  <div class="bg-navy text-white py-3 text-sm text-center">Coyah · +224 626 29 91 93 / +224 661 69 58 58</div>
+  <section id="menu" class="py-16 px-4 max-w-6xl mx-auto"><h2 class="text-3xl font-bold mb-8 text-center">Menu</h2><div class="grid md:grid-cols-3 gap-6"><div class="bg-white rounded-2xl shadow overflow-hidden"><img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&w=600&q=80" class="h-48 w-full object-cover"><div class="p-5"><h3 class="font-bold">Grillades</h3></div></div><div class="bg-white rounded-2xl shadow overflow-hidden"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&q=80" class="h-48 w-full object-cover"><div class="p-5"><h3 class="font-bold">Plats du jour</h3></div></div><div class="bg-white rounded-2xl shadow overflow-hidden"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80" class="h-48 w-full object-cover"><div class="p-5"><h3 class="font-bold">Boissons</h3></div></div></div></section>
+  <section id="gallery" class="py-16 bg-white px-4"><div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-40 object-cover"><img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-40 object-cover"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-40 object-cover"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-40 object-cover"></div></section>
+  <section id="contact" class="py-16 bg-navy text-white text-center px-4"><h2 class="text-3xl font-bold mb-4">Contact</h2><p>Prés de la station Shell, Maneyah, Coyah</p><div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center"><a href="https://wa.me/224626299193" class="bg-teal px-8 py-3 rounded-xl">WhatsApp</a><a href="tel:+224626299193" class="border px-8 py-3 rounded-xl">+224 626 29 91 93</a></div></section>
+  <footer class="bg-slate-900 text-slate-300 py-10 text-sm"><div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6"><div><strong class="text-white">Restaurant Darou Salam</strong><br>Maneyah, Coyah, Guinée<br>+224 626 29 91 93 / +224 661 69 58 58</div><div><strong class="text-white">Al-Falah Marketing</strong><br>8468 Winding Trail, Laurel, MD 20724<br>info@al-falahmarketing.com</div><div>Maquette uniquement · © 2026 Al-Falah Marketing</div></div></footer>
+  <div class="md:hidden fixed bottom-0 inset-x-0 bg-white border-t flex justify-around py-3 z-50"><a href="tel:+224626299193" class="text-xs text-center"><i class="fas fa-phone text-teal"></i><br>Appeler</a><a href="https://wa.me/224626299193" class="text-xs text-center"><i class="fab fa-whatsapp text-teal"></i><br>WhatsApp</a><a href="#menu" class="text-xs text-center"><i class="fas fa-utensils text-teal"></i><br>Menu</a></div>
+</body>
+</html>
